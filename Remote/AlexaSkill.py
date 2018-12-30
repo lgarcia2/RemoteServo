@@ -14,9 +14,7 @@ import requests
 # --------------- Helpers that build all of the responses ----------------------
 
 def flush():
-    #63 schermerhorn
-    #r = requests.post('http://69.119.153.138:8614/flush')
-    r = requests.post('http://66.108.100.223:8614/flush')
+    r = requests.post('http://127.0.0.1:8614/flush')
 
 def build_speechlet_response(title, output, reprompt_text, should_end_session):
     return {
